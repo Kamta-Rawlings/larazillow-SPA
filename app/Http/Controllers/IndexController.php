@@ -8,9 +8,8 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return "index";
-        // inertia(
-            // 'Index/Index',
+        return inertia('Index/Index');
+        
             // [
             //     'message ' => 'Hello from laravel'
             // ]
@@ -19,7 +18,7 @@ class IndexController extends Controller
 
     public function show()
     {
-        return "show";
+        return inertia('Index/show');
         // inertia('Index/show');
     }
 }
